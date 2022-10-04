@@ -1,3 +1,1 @@
-const dev = process.env.NODE_ENV !== 'production'
-
-export const server = dev ? 'http://localhost:3000' : 'https://example.com'
+export const server = process.env.VERCEL ? process.env.VERCEL_URL : "http://localhost:3000"
