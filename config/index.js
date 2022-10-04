@@ -1,1 +1,1 @@
-export const server = process.env.VERCEL ? process.env.VERCEL_URL : "http://localhost:3000"
+export const server = process.env.VERCEL ? `https://${process.env.VERCEL_URL}` : "http://localhost:3000"
